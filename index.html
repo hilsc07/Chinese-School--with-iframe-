@@ -1,0 +1,56 @@
+﻿<script src="js/jquery-1.9.1.min.js"></script>
+<script>
+    window.onload = function () {
+        loadPage('indexContent.html');
+    }
+
+    function loadPage(pageName) {
+        var objFrame = document.getElementById("contentHolder");
+        objFrame.src = pageName;
+    }
+
+</script>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+<!--StyleSheets -->
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="responsiveslides.css" />
+<link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+<title>Croydon Chinese School</title>
+</head>
+
+<body>
+
+		<div id="contact">
+			<ul>
+				<li><p class="glyphicon glyphicon glyphicon-map-marker " aria-hidden="true">Trinity School, Shirley Road, Croydon CR9 7AT</p></li>
+				<li><p class="glyphicon glyphicon glyphicon-earphone" aria-hidden="true"> 0125555555</p></li>
+				<li><p class="glyphicon glyphicon glyphicon glyphicon-envelope" aria-hidden="true"> <a href="mailto:chineseschool@gmail.com">chineseschool@gmail.com</a></p></li>
+			</ul>
+		</div>
+
+		<div id="header" style="position:relative;height:20%;">
+			<div class="logo">
+				<img alt="Croydon" src="photos/logo1.png" />
+			</div>
+
+			<img alt="" src="icons/home.png" onclick="loadPage('indexContent.html')" height="100" width="100" />
+			<img alt="" src="icons/about.png" onclick="loadPage('about.html')" height="100" width="100" />
+			<img alt="" src="icons/newsevents.png" onclick="loadPage('newsevents.html')" height="100" width="100" />
+			<img alt="" src="icons/contact.png" onclick="loadPage('contact.html')" height="100" width="100" />	
+		</div>
+        
+        <iframe frameBorder="0" id="contentHolder" style="overflow:scroll"></iframe>
+
+        <div id="footer" style="height:6.5%">
+            <p>Copyright (c) Croydon Chinese School 2015</p>
+        </div>
+		
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+﻿<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/responsiveslides.min.js"></script>
+<link rel="stylesheet" href="responsiveslides.css" />
+<link rel="stylesheet" href="style.css" />
+
+
+
+<script>
+            $(function () {
+
+              // Slideshow 1
+              $("#slider1").responsiveSlides({
+                auto: true,
+                pager: true,
+                nav: true,
+                speed: 500,
+                maxwidth: 800,
+                namespace: "centered-btns"
+              });
+            });
+</script>
+
+<div class="jumbotron">
+    <div class="rslides_container" style="width:100%;">
+        <ul class="rslides" id="slider1" style="margin:auto;width:100%;height:320px;">
+            <li><img src="images/4716178917_2f178ff9d8_b.jpg" alt="" /></li>
+            <li><img src="images/2.jpg" alt="" /></li>
+            <li><img src="images/3.jpg" alt="" /></li>
+        </ul>
+    </div>
+</div>
+<div class="about">
+    <table>
+        <tr>
+            <td>
+                <a href="about.html#objectives">
+                    <img alt="" src="icons/objectives.png" height="100" width="100" />
+                </a>
+                <p>Objectives</p>
+            </td>
+            <td>
+                <a href="about.html#schoolsite">
+                    <img alt="" src="icons/school_icon.png" height="100" width="100" />
+                </a>
+                <p>School Site</p>
+            </td>
+            <td>
+                <a href="about.html#staff">
+                    <img alt="" src="icons/teacher_icon.png" height="100" width="100" />
+                </a>
+                <p>Teaching Staff</p>
+            </td>
+            <td>
+                <a href="registration.html">
+                    <img alt="" src="icons/signup.png" height="100" width="100" />
+                </a>
+                <p>Register Now!</p>
+            </td>
+        </tr>
+    </table>
+
+</div>
+
